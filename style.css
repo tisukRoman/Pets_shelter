@@ -81,8 +81,8 @@ html{
 
 .container_big{
     width: 100vw;
-    background: url('Dog.png') no-repeat,
-                url('background.png') no-repeat;
+    background: url('img/Dog.png') no-repeat,
+                url('img/back.png') no-repeat;
     background-position: 105% -5%, top;
     background-size: 75%, auto;
     height: 100vh;
@@ -408,7 +408,7 @@ nav ul li a:hover{
 
 footer{
     height: 30em;
-    background-image: url("footer_dog.png"), url("bg.png");
+    background-image: url("img/footer_dog.png"), url("img/bg.png");
     background-position: 78% bottom, center;
     background-size: auto, cover;
     background-repeat: no-repeat;
@@ -475,7 +475,7 @@ footer h3:first-child{
 
 @media (max-width:991px){
     .container_big{
-        background: url('background.png') no-repeat;
+        background: url('img/back.png') no-repeat;
     }
     .header_content{
         height: 36%;
@@ -553,7 +553,7 @@ footer h3:first-child{
     }
     footer{
         height: 30em;
-        background-image: url("bg.png");
+        background-image: url("img/bg.png");
         background-position:  center;
         background-size:  cover;
     }
