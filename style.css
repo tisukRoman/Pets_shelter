@@ -508,11 +508,6 @@ footer h3:first-child{
         width:100%;
         justify-content: space-around;
     }
-    .scroll .button{
-        opacity: 0;
-        height: 40em;
-        width: 15%;
-    }
     .scroll{
         justify-content: center;
     }
