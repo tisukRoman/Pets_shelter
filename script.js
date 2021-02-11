@@ -1,6 +1,8 @@
 let menuDisp = document.querySelector('.menu_display');
 let html = document.querySelector('html');
 
+AOS.init();
+
 let flag = false;
 function myFunction(x) {
     x.classList.toggle("change");

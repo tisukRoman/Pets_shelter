@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pets</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="script.js" defer></script>
 </head>
 
 <body>
+
     <div class="container_big">
             <div class="menu_display">
                 
@@ -46,12 +49,12 @@
             </div>
             
             <div class="header_content">
-                <h1>Not only people 
+                <h1 data-aos="zoom-in-right">Not only people 
                     need a house</h1>
-                <article>
+                <article data-aos="zoom-in-right">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, eaque vitae autem repellendus magnam itaque dolore similique, architecto, ex ducimus id numquam doloribus.
                 </article>
-                <div class="button"><a href="/">Make a friend</a></div>
+                <div class="button" data-aos="zoom-in-right"><a href="/">Make a friend</a></div>
             </div>
         </header>
     </div>
@@ -59,23 +62,29 @@
      <main>
 
         <div class="about">
-            <img src="img/Pets.png" alt="pets">
+            <img data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            src="img/Pets.png" alt="pets">
             <div class="media">
-                <h3>
+                <h3 data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                     About the shelter
                     “Cozy House”
                 </h3>
                 
-                <p> In saepe expedita enim, ullam quo quasi, nostrum, aperiam voluptatem quis sequi obcaecati reiciendis dolorem.aecati reiciendis dolorem.</p>
-                <p>ipsum dolor sit, amet consectetur adipisicing elit. Cumque reiciendis, quisquam corrupti aut aliquid molestias deleniti, voluptate vero ipsa qui fugiat at ad quidem eligendi eaque consequatur, consequuntur pariatur nobis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum iure, eveniet recusandae illo ea corrupti! In saepe expedita enim, ullam quo quasi, nostrum, aperiam voluptatem quis sequi obcaecati reiciendis dolorem.aecati reiciendis dolorem.</p>
+                <p data-aos="fade-up"> In saepe expedita enim, ullam quo quasi, nostrum, aperiam voluptatem quis sequi obcaecati reiciendis dolorem.aecati reiciendis dolorem.</p>
+                <p data-aos="fade-up">ipsum dolor sit, amet consectetur adipisicing elit. Cumque reiciendis, quisquam corrupti aut aliquid molestias deleniti, voluptate vero ipsa qui fugiat at ad quidem eligendi eaque consequatur, consequuntur pariatur nobis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum iure, eveniet recusandae illo ea corrupti! In saepe expedita enim, ullam quo quasi, nostrum, aperiam voluptatem quis sequi obcaecati reiciendis dolorem.aecati reiciendis dolorem.</p>
                 
             </div>
         </div>
 
 
         <div class="big_title">
-            <h3>Our friends who</h3>
-            <h3> are looking for a house</h3>
+            <h3 data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">Our friends who</h3>
+            <h3 data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"> are looking for a house</h3>
         </div>
 
 
@@ -83,7 +92,8 @@
             <div class="button left">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
             </div>
-                <div class="slider">
+                <div class="slider" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                     <a href='/'  class="card" id="cat">
                         <img src="img/Cat.png" alt="cat">
                         <span>Katrine</span>
@@ -132,7 +142,8 @@
         </div>
 
 
-        <a href='/' class="rest_button">
+        <a href='/' class="rest_button" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
             Get to know the rest
         </a>
 
@@ -143,7 +154,7 @@
         </div>
 
 
-        <div class="flex_icons">
+        <div class="flex_icons" data-aos="fade-left">
 
             <a href='/' class="flex_item">
                     <img src="img/cat-food.png" alt="1">
@@ -195,16 +206,16 @@
 
         <div class="don_con">
             <div class="donation">
-                <img src="img/donation.png" alt="dog">
+                <img src="img/donation.png" alt="dog" data-aos="fade-up-right">
                 <div class="donation_media">
-                    <h3>In addition, you 
+                    <h3 data-aos="fade-up-right">In addition, you 
                         can make a donation</h3>
-                    <span>Name of the bank / Type of bank account</span>
-                    <div>
+                    <span data-aos="fade-up-right">Name of the bank / Type of bank account</span>
+                    <div data-aos="fade-up-right">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"/></svg>
                         8380 2880 8028 8791 7435
                     </div>
-                    <article>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed 
+                    <article data-aos="fade-up-right">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed 
                         ac diam. Praesent ultrices maximus tortor et vulputate. Interdum 
                         et malesuada fames ac ante ipsum primis in faucibus. 
                     </article>
@@ -216,7 +227,8 @@
      </main>
 
      <footer>
-        <div class="foot_container">
+        <div class="foot_container" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
             <div class="column">
                 <h3>For questions </h3>
                 <h3>and suggestions</h3>
@@ -250,6 +262,7 @@
 
 
 </div>
+
 
 </body>
 

@@ -170,7 +170,7 @@ nav ul li a:hover{
 
 .about{
     display: flex;
-    width:55%;
+    width:60%;
     margin: 6em auto;
     justify-content: space-between;
     flex-wrap: wrap;
