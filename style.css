@@ -33,6 +33,9 @@ body {
   z-index: 2;
   transition: 0.5s;
 }
+.menu_display__active {
+  height: 100vh;
+}
 .menu_display nav ul {
   display: flex;
   height: 100vh;

@@ -1,8 +1,19 @@
-let menuDisp = document.querySelector(".menu_display");
-let html = document.querySelector("html");
-
+// Animations on scroll
 AOS.init();
 
+// Mobile menu code
+let menuDisplay = document.querySelector(".menu_display");
+let menuButton = document.querySelector("#mobile_menu_burger");
+
+menuButton.addEventListener("click", toggleMenu);
+menuDisplay.addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+  menuButton.classList.toggle("change");
+  menuDisplay.classList.toggle("menu_display__active");
+}
+
+// Slider code
 const swiper = new Swiper(".swiper", {
   centeredSlides: true,
   centerInsufficientSlides: true,
@@ -42,19 +53,3 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
-
-let flag = false;
-
-function myFunction(x) {
-  x.classList.toggle("change");
-
-  if (flag == false) {
-    html.style.overflowY = "hidden";
-    menuDisp.style.height = 100 + "%";
-    flag = true;
-  } else {
-    html.style.overflowY = "auto";
-    menuDisp.style.height = 0 + "%";
-    flag = false;
-  }
-}
