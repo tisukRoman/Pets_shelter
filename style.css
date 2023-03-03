@@ -121,7 +121,7 @@ nav ul li a {
   height: 2em;
 }
 nav ul li a:hover {
-  border-bottom: 3px solid yellow;
+  border-bottom: 2px solid yellow;
 }
 .logo h2 {
   color: #f1cdb3;
@@ -167,7 +167,7 @@ nav ul li a:hover {
   width: 60%;
   margin: 6em auto;
   justify-content: center;
-  gap: 12em;
+  column-gap: 12em;
   flex-wrap: wrap;
 }
 .about img {
@@ -204,70 +204,6 @@ nav ul li a:hover {
   font-size: 2.5rem;
   font-family: Georgia, "Times New Roman", Times;
   color: #545454;
-}
-
-.scroll {
-  margin-top: 3em;
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-}
-.scroll .button {
-  display: block;
-  color: black;
-  border: 2px solid #f1cdb3;
-  width: 3em;
-  border-radius: 100%;
-  padding: 0.6em;
-  cursor: pointer;
-  align-self: center;
-}
-.scroll .slider {
-  height: 35em;
-  width: 70%;
-  display: flex;
-  align-items: baseline;
-  overflow: hidden;
-  position: relative;
-}
-.scroll .card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  flex: 0 1;
-  margin: 0 5em;
-  left: 0%;
-  transition: 0.4s;
-}
-.scroll .card span {
-  font-family: Georgia, "Times New Roman", Times;
-  color: #545454;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.scroll .card div {
-  margin-top: 1em;
-  color: black;
-  height: 2em;
-  font-size: 1.6rem;
-  text-align: center;
-  border: 3px solid #f1cdb3;
-  border-radius: 5em;
-  line-height: 1.6em;
-  font-family: Georgia, "Times New Roman", Times;
-  cursor: pointer;
-}
-.scroll .button:hover {
-  background-color: #f1cdb3;
-  transform: rotate(360deg);
-}
-.scroll .card:hover {
-  transform: scale(1.1);
-}
-.scroll .card:hover div {
-  background-color: #f1cdb3;
 }
 
 .rest_button {
@@ -333,7 +269,6 @@ nav ul li a:hover {
 
 .don_con {
   background-color: rgba(255, 235, 205, 0.281);
-  height: 40em;
 }
 .donation {
   display: flex;
@@ -341,7 +276,7 @@ nav ul li a:hover {
   width: 80%;
   margin: 3em auto;
   justify-content: center;
-  gap: 12em;
+  column-gap: 12em;
 }
 .donation img {
   width: 40em;
@@ -435,6 +370,58 @@ footer h3:first-child {
   font-size: 1.5em;
   font-weight: 100;
   margin-left: 1.3em;
+}
+
+.swiper {
+  margin-top: 2em;
+  width: 80%;
+  height: 400px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #f1cdb3 !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  transition: 0.4s;
+}
+
+.swiper-slide .slide-button:hover {
+  background-color: #f1cdb3;
+}
+.swiper-slide .image-wrapper {
+  border: none;
+  width: 100%;
+  height: 30em;
+  text-align: center;
+  position: relative;
+}
+.swiper-slide .image-wrapper img {
+  display: block;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.swiper-slide span {
+  display: block;
+  font-family: Georgia, "Times New Roman", Times;
+  color: #545454;
+  font-size: 2rem;
+}
+.swiper-slide .slide-button {
+  margin-top: 1em;
+  color: black;
+  height: 2em;
+  line-height: 2em;
+  font-size: 1.6rem;
+  text-align: center;
+  border: 3px solid #f1cdb3;
+  border-radius: 5em;
+  font-family: Georgia, "Times New Roman", Times;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
