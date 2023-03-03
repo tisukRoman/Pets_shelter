@@ -269,12 +269,13 @@ nav ul li a:hover {
 
 .don_con {
   background-color: rgba(255, 235, 205, 0.281);
+  padding-bottom: 4em;
 }
 .donation {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
-  margin: 3em auto;
+  margin: auto auto;
   justify-content: center;
   column-gap: 12em;
 }
@@ -473,9 +474,6 @@ footer h3:first-child {
   }
   .scroll {
     justify-content: center;
-  }
-  .don_con {
-    height: 70em;
   }
   .donation .donation_media {
     flex-direction: column;
